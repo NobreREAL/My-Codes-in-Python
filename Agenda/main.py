@@ -101,7 +101,7 @@ class Agenda:
                 break
 
         if verify:
-            cursor.execute(f"delete from tbContato where id = '{id}'")
+            cursor.execute(f"delete from tbContato where id = '{id_contact}'")
             self.bank.commit()
             print("Contact is deleted!")
 
